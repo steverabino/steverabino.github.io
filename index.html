@@ -82,6 +82,9 @@
       <div class="sub-header">
         <h2>CV</h2>
       </div>
+      <div class="intro">
+        <p>Download a <a href="files/SteveSmithCV.pdf">pdf</a> or <a href="files/SteveSmithCV.doc">Microsoft Word</a> version</p>
+      </div>
       <div class="site-wrap">
         <div>
           <center><h2>Steve Smith</h2></center>
@@ -89,192 +92,93 @@
             Personal Statement
           </h3>
           <p>
-            Hard-working, professional engineer, who has spent almost 10 years working in testing and QA roles in both permanent and consulting capacities. I am now looking to move into a developer role, to build upon experiences I’ve gained in test automation (Ruby), and projects outside of work (in Ruby and PHP).
+            I’m a hard-working, professional engineer, who has spent almost 10 years working in testing and QA roles, in both permanent and consulting capacities. I am now looking to move into a developer role, to build upon experiences I’ve gained in test automation (<b>Ruby</b>), and projects outside of work (in <b>Ruby</b> and <b>PHP</b>).
           </p>
           <hr>
           <h3>
-            Development Experience
+            Development Experience (professional)
           </h3>
-          <h5>
+          <h4>
+            Test Automation at Venntro
+          </h4>
+          <p>
+            As a senior tester at Venntro, I took responsibility for much of the development and configuration of the existing automated browser testing suite. I was required to create new tests, update existing ones, fix bugs, refactor inefficient code, configure the CI suite, and onboard new team members so they could use it.
+          </p><p>
+            The suite is written in <b>Ruby</b>, on a <b>Capybara</b> framework, utilising <b>Selenium Webdriver</b> to control the browser. Tests were run both manually, and on a schedule from <b>Jenkins</b>, and <b>Git</b> and <b>GitHub</b> were used extensively to work on feature branches, and request and review changes.
+          </p>
+          <h4>
+            Automated Testing Dashboard at Tribal Worldwide
+          </h4>
+          <p>
+            Whilst being involved in setting up a test team structure at Tribal, we needed a way to make sure that the Agile approach being taken was not introducing regression in previous sprints’ work. I created a simple <b>Rails</b> app that queried the <b>Jenkins API</b> every 15 minutes to get information about build results. This was then shown in a dashboard on a screen in the office to highlight when automation suites from any of the previous sprints were failing, and how long they had been failing for.
+          </p>
+          <h4>
+            Release Report Automation at Lyst
+          </h4>
+          <p>
+            I was given the responsibility of creating daily release reports for a teammate who was on holiday. The report took two hours to complete each day, so I took it upon myself to use some recent <b>Rails</b> learning experiences to create an app to do the legwork for me.
+          </p><p>
+            The app queried the <b>JIRA API</b> to find information about tickets that had been completed in a specified timeframe, and also the <b>GitHub API</b> to find related pull requests (using <b>regex</b> to find ticket numbers). It reduced the amount of effort required to produce the report each evening down to a couple of minutes of light editing.
+          </p>
+          <hr>
+          <h3>
+            Development Experience (volunteer)
+          </h3>
+          <h4>
             Draw My Life - <a href="https://github.com/empowerhack/DrawMyLife-Service">Github Repo</a>
-          </h5>
+          </h4>
           <p>
-            I am one of a small team of engineers who are working on this project, the aim of which is to create a library of drawings made by child refugees, so they may be used to lobby for more funding towards children’s mental health initiatives amongst refugee populations. The app is built on Ruby on Rails, and provides an API in order to provide images and data with a wider audience, including the Humanitarian Data Exchange (HDX).
+            I am one of a small team of engineers who are working on this project, the aim of which is to create a library of drawings made by child refugees, so they may be used to lobby for more funding towards children’s mental health initiatives amongst refugee populations. The app is built on <b>Ruby on Rails</b>, and provides an <b>API</b> in order to provide images and data with a wider audience, including the Humanitarian Data Exchange (HDX).
           </p>
-          <h5>
+          <h4>
             ACB Calculator - <a href="https://github.com/stevesmith2609/acb-calc">Github Repo</a> - <a href="http://www.acbcalc.com">Live Site</a>
-          </h5>
+          </h4>
           <p>
-            The ACB Calculator is a web app (Ruby on Rails) I have created for a student doctor friend of mine. It is a tool used to calculate a patient’s Anticholinergic Burden (ACB) score based on the medicines they are taking. The app uses Javascript and JQuery to update a running score based on medicines entered and warn the user when the score hits a dangerous level. It also uses caching to work offline, as this is necessary in a hospital setting.
+            The ACB Calculator is a web app (<b>Ruby on Rails</b>) I have created for a student doctor friend of mine. It is a tool used to calculate a patient’s Anticholinergic Burden (ACB) score based on the medicines they are taking. The app uses <b>Javascript</b> and <b>JQuery</b> to update a running score based on medicines entered and warn the user when the score hits a dangerous level. It also provides the ability to work as an offline web app, as this is necessary in a hospital setting.
           </p>
-          <h5>
+          <h4>
             UK Ultimate - <a href="http://www.ukultimate.com">Live Site</a>
-          </h5>
+          </h4>
           <p>
-            UK Ultimate is the governing body of Ultimate Frisbee in the UK. I took over the technical running of their website in late 2012, and have been hosting, supporting, and providing patches and updates ever since. It is based on a Drupal framework (PHP), with some custom modules that I have expanded the functionality of. It is used by almost 4,000 members to pay annual fees and to keep up to date with UKU news and events.
+            UK Ultimate is the governing body of Ultimate Frisbee in the UK. I took over the technical running of their website in late 2012, and have been hosting, supporting, and providing patches and updates ever since. It is based on a <b>Drupal</b> framework (<b>PHP</b>), with some custom modules that I have expanded the functionality of. It is used by almost 4,000 members to pay annual fees and to keep up to date with UKU news and events.
           </p>
           <hr>
           <h3>
             Employment History
           </h3>
-            <table>
-              <tr>
-                <td width=190>
-                  Dec 2012 – Present
-                </td>
-                <td>
-                  <h4>Director and QA Consultant of Ultimate Testing Ltd</h4>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <h4>QA Engineer - Global Personals / Venntro</h4>
-                  <p>Manual and automation software testing in an Agile environment. As well as regular testing duties such as test scripting and execution across a range of platforms, I was involved in regular sprint planning and retrospectives, working closely with developers to help them fully understand requirements, forewarn them of edge-cases, and to review code changes. Additionally, writing and maintaining test automation scripts in Ruby on a Capybara framework, utilising Rspec and Selenium Webdriver, and implementing the continuous integration strategy, and configuration of Jenkins, the chosen CI tool. Git and GitHub used extensively, working on feature branches, and reviewing changes.</p>
-                  <p>
-                  Projects were usually changes to the user-facing desktop and mobile dating websites built in ColdFusion and Ruby, which needed to take into account the huge number of different markets the websites are aimed at, and the different territories in which they operate. I also took the role of leading testing on financial projects, ensuring partners were being paid the correct amounts, correct statements were being produced for them (including correct VAT calculations), and that all financial exports from the system were able to be imported into the company’s chosen accounting package.</p>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <h4>Senior QA Engineer - Tribal Worldwide</h4>
-                  <p>
-                  A short contract helping to set up the test team on a large-scale overhaul of Volkswagen’s customer website and native apps. This involved preparing a team of six testers, mostly based in Eastern Europe, to work in an Agile way to complete incremental changes in short sprints, and pushing for changes in the way that development and testing were being performed. I also created a Rails app to show how often automation regression tests were failing.</p>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <h4>Test Analyst - BMT Defence Services</h4>
-                  <p>
-                  System Test planning (including estimation), execution, and analysis on small-scale projects for the MoD, as well as preparing Acceptance Test level scripts for customers. Projects tended to follow an Agile methodology, with short development and testing cycles favoured, which required me to be flexible, and work closely with different developers.</p>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td width=190>
-                  Jul 2011 – Jun 2012
-                </td>
-                <td>
-                  <h4>Senior Consultant – Deloitte LLP</h4>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <p>A permanent position in Deloitte’s Enterprise Risk Services team as a Senior Test Consultant, being engaged at clients’ businesses to provide testing leadership services, and assisting in the sale of business to new clients.</p>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <h4>Non-Functional Test Lead – Prudential</h4>
-                  <p>
-                    Planning and executing the non-functional test phases of two software releases as part of Prudential’s Solvency II solution. My role involved timing individual components of batch runs at various different loads using bespoke timing software run on UNIX servers, reporting the results, predict the effects on the scaled-up production environment, raising defects to developers, and producing documentation including Test Plans and Test Completion Reports for stakeholders.
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <h4>Test Lead – Department of Health</h4>
-                  <p>
-                  Leading the Integrated System Test phase of the brand new DoH Foundation Programme Application System, a web-based system for placing medical students into NHS Trust placements. This engagement started with me assisting in the creation of an Excel-based test and defect management tool using formulae and basic VBA to meet the needs of the project. My role then included overseeing and contributing to the creation of over 700 test scripts over a two-week period, tracing these test scripts back to business and functional requirements, getting involved in the actual testing, and taking the lead on daily defect meetings with the supplier; assigning actions to individuals, and delivering daily status reports.</p>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <h4>Interim Programme Test Manager – Sainsbury’s</h4>
-                  <p>
-                  Overseeing the testing efforts of three testing suppliers on a large programme to migrate Sainsbury’s online store onto a new strategic platform. Reviewing test preparation documents, ensuring that testers had included all necessary details and that suitable test environments were being requested. Weekly reporting at the Programme board and to Sainsbury’s central test function, raising and managing testing-related risks, and recommending an approach to test automation.</p>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <h4>Test Analyst – Nationwide Building Society</h4>
-                  <p>
-                  Preparing and executing the System Test phase on two of four SAS database engines which comprise Nationwide’s Liquidity Management System, a forecasting tool using a massive data warehouse to simulate cash flows and their effects on assets and liabilities to meet the FSA’s liquidity reporting requirements. The role involved understanding, and testing against, a 3rd party’s technical design specification and the existing tactical solution, using SAS Enterprise Guide.</p>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td width=190>
-                  Aug 2010 - Jul 2011
-                </td>
-                <td>
-                  <strong>IT Test Analyst – Serco (businesslink.gov.uk)</strong>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <p>
-                    I was primarily the Test Lead on Contracts Finder, a brand new .NET website delivered by a 3rd party developer in Cardiff. My role was to script and perform the UAT cycle of testing, report defects back to the developers, and report progress to the Project Manager within Serco. I tested the initial build of the site, a massive undertaking, a couple of bug fix releases, and a new API for third party data feed providers to use. I also performed confirmation and regression testing on dates when new code was released to the live environment on all the Business Link websites, which were based on a customised TeamSite CMS framework. The testing was mostly manual, though I was also able to use the Firefox Selenium IDE add-on to record and run automated tests on the sites to check user journeys and create test data.
-                  </p>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td width=190>
-                  Sep 2007 - Aug 2010
-                </td>
-                <td>
-                  <strong>IT Graduate / IT Test Analyst - AXA</strong>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <p>
-                    I spent my first 2 years at AXA on an IT graduate scheme, consisting of placements in various business units and IT functions. Placements included a phase as Defect Manager on a £2,000,000+ project to bring automated underwriting to customers at the point of sale, Business Analyst on a project introducing 3rd party Windows-based software to administer an innovative pension product, and Test Analyst on a web-based insurance policy tracking feature for customers.
-                  </p><p>
-                    This led me to a spell as a Test Analyst, preparing and executing manual IST and UAT test conditions using HP Quality Center as a test and defect management tool. The technology under test was a web-based life insurance quotation solution, and its interactions with a variety of back-end applications such as ALIS (a life assurance policy administration application) and Siebel (a customer relationship management application).
-                  </p>
-                </td>
-              </tr>
-            </table>
+          <p>
+            Dec 2012 - Present <span class="employment"><b>Director and QA Consultant of Ultimate Testing Ltd</b></span>
+          </p>
+          <p>
+            <span class="employment">Contract roles at <b>Venntro</b> (QA and Test Automation), <b>Tribal Worldwide</b> (Test Management), and <b>BMT Defence Services</b> (QA)</span>
+            <br><br>
+          </p>
+          <p>
+            May 2015 - Sep 2015 <span class="employment"><b>QA Engineer at Lyst</b></span>
+          </p>
+          <p>
+            Jul 2011 - Jun 2012 <span class="employment"><b>Senior Consultant at Deloitte</b></span>
+          </p>
+          <p>
+            Aug 2010 - Jul 2011 <span class="employment"><b>Test Analyst at Serco (businesslink.gov.uk)</b></span>
+          </p>
+          <p>
+            Sep 2007 - Aug 2010 <span class="employment"><b>IT Graduate / Test Analyst at AXA</b></span>
+          </p>
           <hr>
           <h3>Education</h3>
-            <table>
-              <tr>
-                <td width=190>
-                  2004 - 2007
-                </td>
-                <td>
-                  <strong>Cardiff University</strong>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <p>
-                    <strong>BSc Accounting (2:1 classification)</strong>
-                    <br>
-                    Modules included: <i>Accounting Information Systems, Accounting Investigation, Financial and Management Accounting, Business Environment and Organisational Behaviour.</i>
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td valign=top>
-                  1997 - 2004
-                </td>
-                <td>
-                  <strong>Devonport High School for Boys</strong>
-                </td>
-              </tr>
-              <tr>
-                <td colspan=2>
-                  <p>
-                    <strong>4 `A` Levels</strong> <i>Business Studies (A), General Studies (A), Mathematics (B), Economics (C)</i>
-                    <br>
-                    <strong>1 `AS` Level</strong> <i>Information and Communications Technology (A)</i>
-                    <br>
-                    <strong>10 GCSEs</strong> <i>Double Science (A*A*), English Language (A), English Literature (A), French (A), Geography (A), Mathematics (A), Business Studies (B), Drama (B), Electronics &amp; ICT (B)</i>
-                  </p>
-                </td>
-              </tr>
-            </table>
+          <p>
+            2004 - 2007 <span class="employment"><b>BSc Accounting, 2:1 classification</b><br>Cardiff University</span><br><br>
+          </p>
+          <p>
+            1997 - 2004 <span class="employment"><b>4 ‘A’ Levels, 1 ‘AS’ Level, 10 GCSEs</b><br>Devonport High School for Boys, Plymouth</span><br><br>
+          </p>
           <hr>
           <h3>Interests and Hobbies</h3>
           <p>
-            Outside of work, I like to play Ultimate Frisbee, a non-contact team sport I picked up at university, and have been playing ever since. It is great exercise, and I really enjoy being part of a team. I play for Thundering Herd, a mixed-gender team based in Clapham. I am also a keen traveller, both for Frisbee tournaments, and for my own pleasure.
+            I’ve spent a lot of my spare time recently trying to improve my development skills. I volunteer with EmpowerHack, an organization that creates technical solutions to specific challenges faced by refugee women and children. I’ve also been completing online courses to improve my knowledge of <b>Ruby on Rails</b> and <b>Javascript</b>.
           </p><p>
-            I’ve also spent a lot of time recently trying to improve my development skills. Two of the most recent courses I have been following along with that have provided me with a wealth of knowledge have been Mackenzie Child’s 12 web apps in 12 weeks, which has given me a foundation in working with Ruby on Rails, and Wes Bos’ Javascript 30, which I have completed to give me a better understanding of JavaScript.
+            I also like to play Ultimate Frisbee, a non-contact team sport I picked up at university, and have been playing ever since. It is great exercise, and I really enjoy being part of a team. I play for Thundering Herd, a mixed-gender team based in Clapham. I am also a keen traveller, both for Frisbee tournaments, and for my own pleasure.
           </p>
         </div>
       </div>
