@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   background:#eeeeee;
-  font-family:'arial';
+  font-family:'helvetica';
   font-size: 20px;
   font-weight: 200;
 }
@@ -65,8 +65,8 @@ header {
 
 h1 {
   color: white;
-  font-size: 6vw;
-  text-shadow: 3px 4px 0 rgba(0,0,0,0.2)
+  font-size: 12vh;
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.4)
 }
 
 p, li {
